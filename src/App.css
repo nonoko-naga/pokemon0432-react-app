@@ -7,6 +7,79 @@
   pointer-events: none;
 }
 
+/* 画像ホバー */
+img:hover {
+  cursor:pointer
+}
+/* オーキド博士を角丸 */
+.ohkido {
+  border-radius: 20px;
+}
+/* オーキド博士をズーム & 文言出力 */
+.zoom-box {
+  display: inline-block;
+  overflow: hidden;
+}
+.ohkido.zoom {
+  display: block;
+  transition-duration: .5s;
+}
+.ohkido.zoom:hover {
+  transform: scale(1.1);
+}
+
+/* 吹き出し */
+.balloon {
+  margin-bottom: 5px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+}
+
+.balloon::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #f0f0f0 transparent transparent transparent;
+}
+
+
+/* 出題エリア */
+.quizBoard {
+  width: 380px;
+  height: 50px;
+  text-align: center;
+  background-color: rgb(255,192,203);
+  color: black !important;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.optionArea {
+  width: 500px;
+}
+.option {
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #d4d8e0;
+  margin-left: 10px;
+}
+.option:hover {
+  transform: scale(1.1);
+  border-color: rgb(255,105,180);
+  color: rgb(199,21,133);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,14 +87,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #d4d8e0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /*font-size: calc(10px + 2vmin);*/
+  color: rgb(162, 143, 143);
 }
 
 .App-link {
