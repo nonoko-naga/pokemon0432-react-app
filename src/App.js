@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import ohkido from './ohkido.png';
 import './App.css';
 import { useState, useEffect } from 'react';
-import Button from "@mui/material/Button";
+import { Button, Tooltip } from "@mui/material";
 import Const from './Const';
 
 function App() {
@@ -35,11 +35,13 @@ function App() {
   const judgeAns = (selected) => {
     let balloonText = '';
     let result = ''; // 最終問題だったら、で使う
+    let finalPoint = 0; // 最終問題だったら、で使う
     if (selected === quizList.ANSWER) {
       // 最終問題の結果用
       result = '正解！　プラス10点！　';
       // ポイントをプラス
       let plus = point+10;
+      finalPoint = plus;
       setPoint(plus);
 
       // 吹き出しで実況
@@ -56,7 +58,6 @@ function App() {
 
     // 最終問題だったら
     if (Const.QUIZ_LIST[inc] == null) {
-      let finalPoint = point;
       // 最終問題が正解だったらその旨のメッセージ追加
       if (result !== '') {balloonText = result}
       balloonText = result + '問題は終了！　最終得点は' + finalPoint + '点です';

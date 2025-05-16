@@ -11,12 +11,10 @@
 img:hover {
   cursor:pointer
 }
-/* オーキド博士を角丸 */
-.ohkido {
-  border-radius: 20px;
-}
+
 /* オーキド博士をズーム & 文言出力 */
 .zoom-box {
+  border-radius: 20px;
   display: inline-block;
   overflow: hidden;
 }

@@ -48,6 +48,34 @@ class Const {
             OPTION2 : 'タッツー',
             OPTION3 : 'スターミー',
             ANSWER : 3
+        },
+        7 : {
+            QUESTION : '○○○○○の こえもがらがら かぜひいた',
+            OPTION1 : 'スリーブ',
+            OPTION2 : 'ガラガラ',
+            OPTION3 : 'ピジョン',
+            ANSWER : 2
+        },
+        8 : {
+            QUESTION : '○○○○○に のっていきたい りゅうぐうじょう',
+            OPTION1 : 'カイリュー',
+            OPTION2 : 'ラプラス',
+            OPTION3 : 'コダック',
+            ANSWER : 2
+        },
+        9 : {
+            QUESTION : 'ふりむくな ひそむ○○○○○ よるのやみ',
+            OPTION1 : 'ゲンガー',
+            OPTION2 : 'サイドン',
+            OPTION3 : 'オムナイト',
+            ANSWER : 1
+        },
+        10 : {
+            QUESTION : '○○○○○に あったらいちにち ちょう○○○○○',
+            OPTION1 : 'ジュゴン',
+            OPTION2 : 'イーブイ',
+            OPTION3 : 'ラッキー',
+            ANSWER : 3
         }
         
     }
