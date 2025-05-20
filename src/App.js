@@ -47,6 +47,7 @@ function App() {
       // 吹き出しで実況
       balloonText = '正解！　プラス10点！　合計' + plus + '点！';
     } else {
+      finalPoint = point;
       balloonText = '不正解・・・';
     }
 
